@@ -1,4 +1,5 @@
 .idea
 target
+trainer/
 **/*.iml
 node_modules/
