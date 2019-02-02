@@ -12,6 +12,10 @@ public class WordReverter {
         return stringBuffer.reverse().toString();
     }
 
+    public boolean containsLetterA(String text) {
+        return text.contains("a");
+    }
+
     public String revertOnlyLetterInWords(String value){
         List<String> wordsList = Arrays.asList(value.split(("\\s+")));
         List<String> wordsListRev = wordsList.stream().map(n -> revert(n)).collect(Collectors.toList());
