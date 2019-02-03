@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class WordReverter {
 
-    public String revert(String value){
+    public String revert(String value) {
         StringBuffer stringBuffer = new StringBuffer(value);
         return stringBuffer.reverse().toString();
     }
@@ -16,7 +16,11 @@ public class WordReverter {
         return text.contains("a");
     }
 
-    public String revertOnlyLetterInWords(String value){
+    public boolean containsLetterA(String text, String text2) {
+        return text.contains("a") || text2.contains("a");
+    }
+
+    public String revertOnlyLetterInWords(String value) {
         List<String> wordsList = Arrays.asList(value.split(("\\s+")));
         List<String> wordsListRev = wordsList.stream().map(n -> revert(n)).collect(Collectors.toList());
         StringJoiner joiner = new StringJoiner(" ");

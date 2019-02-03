@@ -32,12 +32,12 @@ public class CalculatorTest {
     }
 
     @Test
-    public void dividingTest() {
+    public void dividingTest() throws CalculatorException {
         //given
         Calculator calculator = new Calculator();
 
         //when
-        int actual = calculator.divide(12,0);
+        int actual = calculator.divide(12,3);
 
         //then
         assertEquals(4,actual);

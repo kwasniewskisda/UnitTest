@@ -28,6 +28,7 @@ public class WordReverterRevertOnlyLetterInWordsTest {
                 }
                 );
     }
+
     @Test
     public void revertOnlyLetterInWords() {
         //given

@@ -1,7 +1,7 @@
 package  pl.sda.tests.reverter;
 
+import static org.assertj.core.api.Assertions.*;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class WordReverterTest {
 
@@ -16,6 +16,10 @@ public class WordReverterTest {
         String actual = wordReverter.revert("Marcin");
 
         //then
-        assertEquals("nicraM",actual);
+        String expected = "nicraM";
+        assertThat(actual).isEqualTo(expected);
+
+        String expectSmallLetters = "nicram";
+        assertThat(actual).isEqualToIgnoringCase(expectSmallLetters);
     }
 }
