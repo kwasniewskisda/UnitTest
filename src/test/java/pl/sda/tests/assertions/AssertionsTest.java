@@ -1,4 +1,4 @@
-package pl.sda.tests.assertios;
+package pl.sda.tests.assertions;
 
 import org.junit.Test;
 
